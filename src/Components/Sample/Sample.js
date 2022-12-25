@@ -9,7 +9,7 @@ const Sample = () => {
     setCount(count + incrementFactor)
   }
 
-  const handleCounterReset = (incrementFactor) => {
+  const handleCounterReset = () => {
     setCount(0)
   }
 
@@ -64,7 +64,7 @@ const Sample = () => {
           isMulti={false}
           isDisabled={false}
           noOptionsMessage={(val) => `No results found for "${val.inputValue}". Try using different keywords`}
-          className='text-green-600'
+          className='w-full sm:w-40 text-green-600'
           classNamePrefix='input'
         />
 
